@@ -1,6 +1,6 @@
 import requests
 
-image = {'image': open('test_photo.jpg', 'rb').read()}
+image = {'image': open('data/men_test.jpg', 'rb').read()}
 
 r1 = requests.get("http://0.0.0.0:5000/")
 print(r1.text)
