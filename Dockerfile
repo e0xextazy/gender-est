@@ -7,8 +7,8 @@ RUN mkdir -p model_files
 ADD model_files/gender_v1.pth model_files/gender_v1.pth
 ADD run.py run.py
 ADD requirements.txt requirements.txt
-ADD model.py model.py
-ADD utils.py utils.py
+ADD model_files/model.py model.py
+ADD utils/utils.py utils.py
 
 RUN apt-get update && apt-get install -y python3-opencv
 RUN pip install --upgrade pip
